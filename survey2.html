@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>설문조사</title>
+
+    <style>
+
+        body{
+            margin: 0;
+            background-color: #eeeeee;
+            font-size: 1em;
+            text-indent: 1em;
+        }
+
+        header{
+            background-color: #e9edf2;
+            padding: 30px 20px;
+            border-bottom: 2px solid gray;
+        }
+
+        h1{
+            text-align: center;
+            color: brown;
+            font-size: 55px;
+            margin: 0;
+            text-indent: 0;
+        }
+
+        header p{
+            font-family: "휴먼편지체";
+            font-size: 20px;
+            margin-top: 40px;
+        }
+
+        section{
+            width: 70%;
+            margin: 30px auto;
+            background-color: #FFB3D0;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 3px 3px 10px gray;
+        }
+
+        article{
+            margin-bottom: 35px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid white;
+            font-size: 22px;
+        }
+
+        hr{
+            border-top: 0.2px solid black;
+            border-bottom: 1px solid black;
+            height: 0;
+        }
+
+        p{
+            font-family: "휴먼편지체";
+        }
+
+        input[type="radio"],
+        input[type="checkbox"]{
+            transform: scale(1.2);
+            margin-left: 10px;
+            margin-right: 5px;
+            accent-color: blue;
+        }
+
+        select{
+            width: 250px;
+            height: 35px;
+            font-size: 18px;
+            border-radius: 8px;
+            border: 1px solid gray;
+            margin-left: 10px;
+        }
+
+        textarea{
+            margin-top: 10px;
+            margin-left: 20px;
+            font-size: 18px;
+            resize: none;
+            border-radius: 10px;
+            padding: 10px;
+            border: 1px solid gray;
+        }
+
+        footer{
+            font-family: "휴먼편지체";
+            background-color: orange;
+            font-size: 25px;
+            font-style: italic;
+            padding: 15px;
+            border-radius: 30px 30px 0 0;
+            text-align: center;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>설문지</h1>
+
+        <p>
+            소프트웨어 기술에 대한 의견을 듣습니다.
+            많은 참여 부탁드립니다.
+        </p>
+
+        <hr>
+
+    </header>
+
+    <section>
+
+        <article>
+
+            <form>
+
+                <p>
+
+                    학년
+
+                    <input type="radio" name="grade" value="1" checked>
+                    <label>1학년</label>
+
+                    <input type="radio" name="grade" value="2">
+                    <label>2학년</label>
+
+                    <input type="radio" name="grade" value="3">
+                    <label>3학년</label>
+
+                </p>
+
+            </form>
+
+        </article>
+
+        <article>
+
+            <form>
+
+                <p>
+
+                    성별
+
+                    <input type="radio" name="gender" value="1">
+                    <label>남</label>
+
+                    <input type="radio" name="gender" value="2">
+                    <label>여</label>
+
+                </p>
+
+            </form>
+
+        </article>
+
+        <article>
+
+            <form>
+
+                <p>
+
+                    관심 분야
+
+                    <select name="interests">
+
+                        <option>모바일 소프트웨어</option>
+                        <option>컴퓨터 소프트웨어</option>
+                        <option>기타 분야</option>
+
+                    </select>
+
+                </p>
+
+            </form>
+
+        </article>
+
+        <article>
+
+            <form>
+
+                <p>
+
+                    진로
+
+                    <input type="checkbox" checked>개발
+                    <input type="checkbox">기획
+                    <input type="checkbox">영업
+                    <input type="checkbox">창업
+
+                </p>
+
+            </form>
+
+        </article>
+
+        <article>
+
+            <p>
+
+                남기고 싶은 말
+
+                <br><br>
+
+                <textarea rows="13" cols="55" placeholder="글을 남겨주세요"></textarea>
+
+            </p>
+
+        </article>
+
+    </section>
+
+    <footer>
+
+        Copyright 2026 by MYONGJI COLLEGE
+
+    </footer>
+
+</body>
+
+</html>
