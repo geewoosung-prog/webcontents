@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>시멘틱 태그로 구조화 연습</title>
+
+        <style>
+
+            body{
+                background-color: aliceblue;
+                margin: 0;
+            }
+
+            header{
+                border-bottom: 1px solid black;
+                padding: 10px;
+            }
+
+            nav ul{
+                border: 1px dotted black;
+                padding: 10px;
+            }
+
+            a{
+                text-decoration: none;
+            }
+
+            p{
+                font-family: "휴먼편지체";
+                font-size: 1em;
+                margin: 0;
+                text-indent: 1em;
+            }
+
+            h1{
+                color: brown;
+                text-align: center;
+            }
+
+            h2{
+                color: blue;
+                text-shadow: 2px 2px 5px gray;
+            }
+
+            nav ul li,
+            article ul li,
+            footer a{
+                font-family: initial;
+            }
+
+            article ul ul{
+                padding-left: 40px;
+            }
+
+            li{
+                padding-left: 5px;
+            }
+
+            table{
+                border-collapse: collapse;
+            }
+
+            td, th{
+                border: 1px solid black;
+                padding: 5px;
+                text-align: center;
+            }
+
+            footer{
+                background-color: orange;
+                border-radius: 35px;
+                margin: 20px 0 0 0;
+                padding: 10px 0;
+                text-align: center;
+                clear: both;
+            }
+
+            /* =========================
+               🔥 여기부터 "배치 핵심"
+               ========================= */
+
+            section{
+                overflow: hidden;
+            }
+
+            nav{
+                float: left;
+                width: 180px;
+                padding: 10px;
+            }
+
+            article{
+                margin-left: 200px;
+                padding: 10px;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <header>
+
+            <h1>About me</h1>
+
+            <p>
+                안녕하세요? 제 이름은 성지우입니다. 올해 대학교를 입학한 새내기입니다.<br>
+                다양한 관심분야와 취미 활동을 하고 있습니다. 즐거운 하루들 되세요~
+            </p><br>
+
+        </header>
+
+        <section>
+
+            <nav>
+
+                <h2>목차</h2>
+
+                <ul>
+                    <li><a href="#interest">관심분야</a></li>
+                    <li><a href="#hobby">취미활동</a></li>
+                    <li><a href="#schedule">강의시간표</a></li>
+                </ul>
+
+            </nav>
+
+            <article>
+
+                <h2 id="interest">관심 분야</h2>
+
+                <hr>
+
+                <ul>
+                    <li>
+                        <p>인공지능</p>
+                        <ul>
+                            <li><p>머신러닝(Machine Learning)</p></li>
+                            <li><p>자연어 처리(NLP)</p></li>
+                            <li><p>컴퓨터 비전</p></li>
+                            <li><p>로보틱스</p></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <p>사물인터넷(IoT)</p>
+                        <ul>
+                            <li><p>센서</p></li>
+                            <li><p>네트워크</p></li>
+                            <li><p>플랫폼</p></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <p>양자컴퓨터</p>
+                        <ul>
+                            <li><p>큐비트</p></li>
+                            <li><p>중첩</p></li>
+                            <li><p>얽힘</p></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </article>
+
+            <article>
+
+                <h2 id="hobby">취미 활동</h2>
+
+                <hr>
+
+                <table>
+
+                    <tr>
+                        <td><img src="media/Drawing.jpeg" width="300"></td>
+                        <td><img src="media/read.jpeg" width="300"></td>
+                        <td><img src="media/Game.jpeg" width="300"></td>
+                    </tr>
+
+                    <tr>
+                        <td>그림그리기</td>
+                        <td>책읽기</td>
+                        <td>게임</td>
+                    </tr>
+
+                </table>
+
+            </article>
+
+            <article>
+
+                <h2 id="schedule">강의 시간표(2026년도 1학기)</h2>
+
+                <hr>
+
+                <table>
+
+                    <tr>
+                        <th>구분</th>
+                        <th>월</th>
+                        <th>화</th>
+                        <th>수</th>
+                        <th>목</th>
+                        <th>금</th>
+                    </tr>
+
+                    <tr>
+                        <td>09</td>
+                        <td></td><td></td><td></td><td></td><td></td>
+                    </tr>
+
+                    <tr>
+                        <td>10</td>
+                        <td></td><td></td>
+                        <td rowspan="4" bgcolor="pink">인터넷 컨텐츠</td>
+                        <td rowspan="4" bgcolor="yellow">컴퓨터과학개론</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>11</td>
+                        <td></td><td></td><td></td>
+                    </tr>
+
+                    <tr>
+                        <td>12</td>
+                        <td></td><td></td><td></td>
+                    </tr>
+
+                    <tr>
+                        <td>01</td>
+                        <td></td><td></td><td></td>
+                    </tr>
+
+                    <tr>
+                        <td>02</td>
+                        <td rowspan="4" bgcolor="pink">프로그래밍언어실습</td>
+                        <td></td>
+                        <td rowspan="2" bgcolor="yellow">SW개발문제해결</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>03</td>
+                        <td></td><td></td><td></td>
+                    </tr>
+
+                    <tr>
+                        <td>04</td>
+                        <td></td><td></td><td></td><td></td>
+                    </tr>
+
+                    <tr>
+                        <td>05</td>
+                        <td></td><td></td><td></td><td></td>
+                    </tr>
+
+                </table>
+
+            </article>
+
+        </section>
+
+        <footer>
+
+            <a href="survey.html">
+                설문조사
+            </a>
+
+            <p>Copyright 2026 by MYONGJI COLLEGE</p>
+
+        </footer>
+
+    </body>
+</html>
